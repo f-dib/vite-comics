@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.my_width {
+    max-width: 1200px;
+    padding: 0px 5px;
+
+    margin: auto;
+}
+
+.my_flex{
+    display: flex;
+}
+
+.my_list {
+    list-style-type: none;
+}
