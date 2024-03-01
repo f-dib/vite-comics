@@ -34,6 +34,7 @@ export default {
         h4{
             text-transform: uppercase;
             font-style: 10px;
+            width: 90%;
         }
     }
 </style>
