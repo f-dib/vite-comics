@@ -34,8 +34,8 @@ export default {
 <template>
     <div>
         <div v-for="currentElement in buy" class="">
-                <div class="my_flex">
-                    <div><img :src="currentElement.img" alt=""></div>
+                <div class="my_flex_list">
+                    <div><img class="my_img" src="../../../public/img/buy-comics-digital-comics.png" alt=""></div>
                     <div>{{ currentElement.description }}</div>
                 </div>
         </div>
@@ -45,6 +45,11 @@ export default {
 <style lang="scss">
     .my_flex_list{
         display: flex;
-        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+
+        .my_img{
+            height: 60px;
+        }
     }
 </style>

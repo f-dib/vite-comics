@@ -59,6 +59,7 @@ export default {
             .my_list2{
                 font-weight: bold;
                 padding: 50px 15px;
+                list-style-type: none;
             }
         }
     }
