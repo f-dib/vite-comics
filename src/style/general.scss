@@ -18,6 +18,13 @@ $primaryColor: #0282f9;
     display: flex;
 }
 
+.my_flex_col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .my_list {
     list-style-type: none;
 }

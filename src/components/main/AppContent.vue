@@ -1,20 +1,25 @@
 <script>
 import InfoBar from './InfoBar.vue';
-
+import ComicsInfo from './ComicsInfo.vue';
 
 export default {
     name: 'AppContent',
 
     components: {
-        InfoBar
+        InfoBar,
+        ComicsInfo
     },
 }
 </script>
 
 <template>
-    <main class="my_width">
-        <div class="my_height">
-            -> Content goes Here 
+    <main>
+        <div class="my_content_bg"></div>
+        <div class="my_width my_flex_col">
+            <div class="buy_area">
+                <div></div>
+            </div>
+            <div><button class="load_more">load more</button></div>
         </div>
     </main>
 
@@ -26,19 +31,32 @@ export default {
 <style lang="scss">
         @use '../../style/general.scss' as *;
 
-        .my_height {
-            padding: 50px 5px;
-            font-weight: bold;
-            font-size: 20px;
+        .my_content_bg {
+            height: 300px;
+            background-image: url("../../../public/img/jumbotron.jpg");
+            background-size: cover;            
+        }
+        
+        .buy_area{
+            padding: 25px 0px;
         }
 
-        .my_style{
-                justify-content: space-around;
-                align-items: center;
+        .load_more{
+            padding: 5px 40px;
+            color: white;
+            background-color: $primaryColor;
+            border: none;
+            text-transform: uppercase;
+            margin-bottom: 10px;
         }
-
+        
         .bg{
             background-color: $primaryColor;
             padding: 50px 0px;
+
+            .my_style{
+                justify-content: space-around;
+                align-items: center;
+            }
         }
 </style>
