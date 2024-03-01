@@ -17,9 +17,13 @@ export default {
 </script>
 
 <template>
+    <div class="my_height3">
 
+    </div>
 </template>
 
 <style lang="scss">
-
+    .my_height3{
+        padding: 50px;
+    }
 </style>

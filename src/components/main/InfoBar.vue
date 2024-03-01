@@ -32,9 +32,19 @@ export default {
 </script>
 
 <template>
-    
+    <div>
+        <div v-for="currentElement in buy" class="">
+                <div class="my_flex">
+                    <div><img :src="currentElement.img" alt=""></div>
+                    <div>{{ currentElement.description }}</div>
+                </div>
+        </div>
+    </div>
 </template>
 
 <style lang="scss">
-
+    .my_flex_list{
+        display: flex;
+        flex-direction: row;
+    }
 </style>

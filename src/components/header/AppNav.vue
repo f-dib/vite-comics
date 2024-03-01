@@ -26,13 +26,13 @@ export default {
 
 <template>
     <nav class="my_nav">
-        <div class="my_width my_flex">
+        <div class="my_width my_width2 my_flex">
             <div>
-                <img src="/dc-logo.png" alt="dc logo">
+                <img src="/img/dc-logo.png" alt="dc logo">
             </div>
 
             <div class="my_flex">
-                <ul v-for="(currentLink, index) in link" :class="index == activeContent ? 'active' : ''" class="my_list">
+                <ul v-for="(currentLink, index) in link" :class="index == activeContent ? 'active' : ''" class="my_list2">
                     <li>{{ currentLink }}</li>
                 </ul>
             </div>
@@ -46,7 +46,8 @@ export default {
         background-color: white;
         color: black;
 
-        .my_width{
+        .my_width2{
+            display: flex;
             justify-content: space-between;
             align-items: center;
 
@@ -55,7 +56,7 @@ export default {
                 border-bottom: 5px solid #0c7cec;
             }
 
-            .my_list{
+            .my_list2{
                 font-weight: bold;
                 padding: 50px 15px;
             }
