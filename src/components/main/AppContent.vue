@@ -96,6 +96,7 @@ export default {
         <div class="my_content_bg"></div>
         <div class="my_width my_flex_col">
             <div class="buy_area">
+                <div class="mini_alert">current series</div>
                 <div class="my_flex flex_wrap">
                     <ComicsInfo v-for="currentComic in info" :comicImage="currentComic.thumb" :comicName="currentComic.series"></ComicsInfo>
                 </div>
@@ -120,6 +121,20 @@ export default {
         
         .buy_area{
             padding: 25px 0px;
+
+            position: relative;
+
+            .mini_alert {
+                background-color: $primaryColor;
+                padding: 5px 15px;
+                text-transform: uppercase;
+                font-weight: 800;
+
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                transform: translateY(-50%);
+            }
         }
 
         .load_more{

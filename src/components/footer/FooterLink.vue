@@ -113,6 +113,7 @@ export default {
         }
 
         .my_style2{
+            text-transform: uppercase;
             font-weight: 900;
             font-size: 20px;
             padding-bottom: 20px;
