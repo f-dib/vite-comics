@@ -6,23 +6,23 @@ export default {
         return {
             buy: [
                 {
-                    img: 'buy-comics-digital-comics.png',
+                    img: '/img/buy-comics-digital-comics.png',
                     description: 'Digital Comics'
                 },
                 {
-                    img: 'buy-comics-merchandise.png',
+                    img: '/img/buy-comics-merchandise.png',
                     description: 'Dc Merchandise'
                 },
                 {
-                    img: 'buy-comics-shop-locator.png',
+                    img: '/img/buy-comics-shop-locator.png',
                     description: 'Subscription'
                 },
                 {
-                    img: 'buy-comics-subscriptions.png',
+                    img: '/img/buy-comics-subscriptions.png',
                     description: 'Comic Shop Locator'
                 },
                 {
-                    img: 'buy-dc-power-visa.svg',
+                    img: '/img/buy-dc-power-visa.svg',
                     description: 'Dc Power Visa'
                 },
             ]
@@ -35,7 +35,7 @@ export default {
     <div>
         <div v-for="currentElement in buy" class="">
                 <div class="my_flex_list">
-                    <div><img class="my_img" src="../../../public/img/buy-comics-digital-comics.png" alt=""></div>
+                    <div class="my_img_box"><img class="my_img" :src="currentElement.img" alt=""></div>
                     <div>{{ currentElement.description }}</div>
                 </div>
         </div>
@@ -48,8 +48,14 @@ export default {
         align-items: center;
         gap: 15px;
 
-        .my_img{
+        .my_img_box{
+            width: 50px;
             height: 60px;
+        }
+
+        .my_img{
+            width: 100%;
+            height: 100%;
         }
     }
 </style>

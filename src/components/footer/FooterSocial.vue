@@ -5,11 +5,11 @@ export default {
     data () {
         return {
             social: [
-                'footer-facebook.png',
-                'footer-twitter.png',
-                'footer-youtube.png',
-                'footer-pinterest.png',
-                'footer-periscope.png'
+                '/img/footer-facebook.png',
+                '/img/footer-twitter.png',
+                '/img/footer-youtube.png',
+                '/img/footer-pinterest.png',
+                '/img/footer-periscope.png'
             ]
         }
     }
@@ -27,7 +27,7 @@ export default {
                     follow us
                 </div>
                 <div v-for="currentImage in social"  class="my_flex my_social">
-                    <img src="../../../public/img/footer-facebook.png" alt="">
+                    <img :src="currentImage" alt="">
                 </div>
             </div>
         </div>
