@@ -35,6 +35,9 @@ export default {
 </template>
 
 <style lang="scss">
+
+    @use '../../style/general.scss' as *;
+
     .my_height3{
         padding: 50px 0px;
         justify-content: space-between;
@@ -46,7 +49,7 @@ export default {
             font-size: 20px;
             color: white;
             padding: 20px;
-            border: 2px solid #0282f9;
+            border: 2px solid $primaryColor;
         }
 
         .my_follow {
@@ -58,7 +61,7 @@ export default {
                 font-size: 20px;
                 font-weight: 900;
                 text-transform: uppercase;
-                color: #0282f9;
+                color: $primaryColor;
             }
 
             .my_social {

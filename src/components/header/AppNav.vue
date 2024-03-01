@@ -42,6 +42,8 @@ export default {
 
 
 <style lang="scss">
+    @use '../../style/general.scss' as *;
+
     .my_nav {
         background-color: white;
         color: black;
@@ -52,14 +54,15 @@ export default {
             align-items: center;
 
             .active{
-                color: #0c7cec;
-                border-bottom: 5px solid #0c7cec;
+                color: $primaryColor;
+                border-bottom: 5px solid $primaryColor;
             }
 
             .my_list2{
                 font-weight: bold;
                 padding: 50px 15px;
                 list-style-type: none;
+                text-transform: uppercase;
             }
         }
     }

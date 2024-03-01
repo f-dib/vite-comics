@@ -24,19 +24,21 @@ export default {
 </template>
 
 <style lang="scss">
-    .my_height {
-        padding: 50px 5px;
-        font-weight: bold;
-        font-size: 20px;
-    }
+        @use '../../style/general.scss' as *;
 
-   .my_style{
-        justify-content: space-around;
-        align-items: center;
-   }
+        .my_height {
+            padding: 50px 5px;
+            font-weight: bold;
+            font-size: 20px;
+        }
 
-   .bg{
-    background-color: #0c7cec;
-    padding: 50px 0px;
-   }
+        .my_style{
+                justify-content: space-around;
+                align-items: center;
+        }
+
+        .bg{
+            background-color: $primaryColor;
+            padding: 50px 0px;
+        }
 </style>
