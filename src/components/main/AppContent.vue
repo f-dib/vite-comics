@@ -92,7 +92,7 @@ export default {
 </script>
 
 <template>
-    <main>
+    <main class="my_bg_color">
         <div class="my_content_bg"></div>
         <div class="my_width my_flex_col">
             <div class="buy_area">
@@ -112,6 +112,10 @@ export default {
 
 <style lang="scss">
         @use '../../style/general.scss' as *;
+
+        .my_bg_color{
+            background-color: #1c1c1c;
+        }
 
         .my_content_bg {
             height: 300px;

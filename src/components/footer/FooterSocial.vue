@@ -39,7 +39,7 @@ export default {
     @use '../../style/general.scss' as *;
 
     .my_height3{
-        padding: 50px 0px;
+        padding: 45px 0px;
         justify-content: space-between;
         align-items: center;
 
@@ -48,7 +48,7 @@ export default {
             text-transform: uppercase;
             font-size: 20px;
             color: white;
-            padding: 20px;
+            padding: 10px 20px;
             border: 2px solid $primaryColor;
         }
 
